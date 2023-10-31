@@ -1,0 +1,61 @@
+.home {
+   text-align: center;
+   height: 90rem;
+
+   .container {
+      height: 100%;
+   }
+
+   &__inner {
+      height: 100%;
+      position: relative;
+      padding-top: 17rem;
+   }
+
+   &__title {
+      max-width: 85rem;
+      text-align: center;
+      margin: 0 auto 16rem auto;
+
+      span {
+         background-color: $primary-color;
+         background-image: $primary-gradient;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+   }
+
+   &__arrow {
+      padding: 0 1rem;
+   }
+}
+
+@media (max-width: 768px) {
+   .home {
+      height: calc(100vh - 90px);
+
+      &__inner {
+         padding-top: 10rem;
+      }
+
+      &__title {
+         margin: 0 auto;
+      }
+
+      &__arrow {
+         display: none;
+      }
+
+      &__shape.shape_small {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   .home {
+      &__title {
+         text-align: left;
+      }
+   }
+}
