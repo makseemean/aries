@@ -1,0 +1,88 @@
+.title {
+   font-family: $ginora-font;
+   color: $primary-light-color;
+   text-transform: capitalize;
+
+   &_h1 {
+      font-size: 8.2rem;
+      line-height: 9.6rem;
+      font-weight: 700;
+   }
+
+   &_h2 {
+      font-size: 6.2rem;
+      line-height: 7.4rem;
+      font-weight: 400;
+   }
+
+   &_h3 {
+      font-size: 4.4rem;
+      line-height: 5rem;
+      font-weight: 400;
+   }
+
+   &_h4 {
+      font-size: 2.6rem;
+      line-height: 3.8rem;
+      font-weight: 600;
+   }
+
+   &_h5 {
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+      font-weight: 400;
+   }
+
+   &_h6 {
+      font-size: 1.6rem;
+      line-height: normal;
+      font-weight: 400;
+   }
+}
+
+@media (max-width: 768px) {
+   .title {
+      font-family: $ginora-font;
+      color: $primary-light-color;
+
+      &_h1 {
+         font-size: 6.2rem;
+         line-height: 7.4rem;
+      }
+
+      &_h2 {
+         font-size: 3.6rem;
+         line-height: 4.4rem;
+      }
+
+      &_h3 {
+         font-size: 2.6rem;
+         line-height: normal;
+      }
+
+      &_h4 {
+         font-size: 2rem;
+         line-height: normal;
+         font-weight: 400;
+      }
+
+      &_h5 {
+         font-size: 1.4rem;
+         line-height: 1.6rem;
+      }
+
+      &_h6 {
+         font-size: 1.2rem;
+         line-height: 1.8rem;
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   .title {
+      &_h1 {
+         font-size: 5rem;
+         line-height: 6rem;
+      }
+   }
+}

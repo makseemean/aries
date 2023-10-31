@@ -1,0 +1,40 @@
+html {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: $gilroy-font;
+	color: $secondary-light-color;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	background-color: $primary-dark-color;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
+
+

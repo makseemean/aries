@@ -1,0 +1,54 @@
+.link {
+   position: relative;
+   font-family: $ginora-font;
+   text-transform: uppercase;
+   font-weight: 600;
+   transition: all .3s;
+   padding-right: 35px;
+
+   &::after {
+      content: '';
+      position: absolute;
+      height: 12px;
+      width: 27px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      transition: all .3s;
+   }
+
+   &_primary-color {
+      color: $primary-color;
+
+      &::after {
+         background-image: url('../images/icons/arrow-right-small-green.svg');
+
+      }
+
+      @media (min-width: 768px) {
+         &:hover {
+            color: $secondary-color;
+            &::after {
+               right: -5px;
+            }
+         }
+      }
+   }
+
+   &_secondary-color {
+      color: $secondary-color;
+
+      &::after {
+         background-image: url('../images/icons/arrow-right-small-blue.svg');
+      }
+
+      @media (min-width: 768px) {
+         &:hover {
+            color: $primary-color;
+            &::after {
+               right: -5px;
+            }
+         }
+      }
+   }
+}

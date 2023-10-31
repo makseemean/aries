@@ -1,0 +1,19 @@
+.shape {
+   position: absolute;
+   background: radial-gradient(50% 50% at 50% 50%, rgb(92, 228, 207) 35.25%, rgb(153, 168, 255) 100%);
+   filter: blur(50px);
+   border-radius: 50%;
+   z-index: -1;
+
+   &_small {
+      width: 7rem;
+      height: 7rem;
+      opacity: .5;
+   }
+
+   &_big {
+      width: 10rem;
+      height: 10rem;
+      opacity: .7;
+   }
+}
