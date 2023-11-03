@@ -46,6 +46,12 @@
          display: none;
       }
 
+      &__shape.shape_big {
+         width: 15rem;
+         height: 15rem;
+         opacity: .3;
+      }
+
       &__shape.shape_small {
          display: none;
       }
