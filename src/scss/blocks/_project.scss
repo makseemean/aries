@@ -1,0 +1,161 @@
+.project {
+   &__block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5rem;
+   }
+
+   &__top {
+      margin-bottom: 9rem;
+   }
+
+   &__middle {
+      margin-bottom: 6rem;
+      gap: 10rem;
+   }
+
+   &__bottom {
+      gap: 10rem;
+   }
+
+   &__title {
+      span {
+         display: block;
+      }
+   }
+
+   &__descr {
+      max-width: 44.5rem;
+   }
+
+
+   &__images {
+      position: relative;
+   }
+
+   &__img {
+      &_small {
+         position: absolute;
+         top: 50%;
+         z-index: 1;
+      }
+
+      &_right {
+         right: 0;
+         transform: translate(30%, -50%);
+      }
+
+      &_left {
+         left: 0;
+         transform: translate(-30%, -50%);
+      }
+   }
+
+   &__content {
+      max-width: 52rem;
+   }
+
+   &__name {
+      font-family: $ginora-font;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: $tertiary-light-color;
+      margin-bottom: 5px;
+   }
+
+   &__subtitle {
+      margin-bottom: 5rem;
+   }
+
+   &__text {
+      margin-bottom: 4.5rem;
+   }
+
+}
+
+@media (max-width: 1024px) {
+   .project {
+      &__top {
+         display: block;
+      }
+
+      &__title {
+         margin-bottom: 2rem;
+      }
+
+      &__descr {
+         max-width: none;
+      }
+
+      &__img {
+         &_small {
+            max-width: 15rem;
+            top: 20%;
+         }
+
+         &_right {
+            transform: translate(30%, 0);
+         }
+
+         &_left {
+            transform: translate(-30%, 0);
+         }
+      }
+
+   }
+}
+
+@media (max-width: 768px) {
+   .project {
+      padding-top: 10rem;
+
+      &__block {
+         display: block;
+      }
+
+      &__middle {
+         margin-bottom: 8rem;
+      }
+
+      &__images {
+         padding: 0 2rem;
+
+         &_top {
+            margin-bottom: 5rem;
+         }
+
+         &_bottom {
+            margin-top: 5rem;
+         }
+      }
+
+      &__img {
+         margin: 0 auto;
+
+         &_small {
+            max-width: 18rem;
+            top: 50%;
+            transform: translate(0, -50%);
+         }
+      }
+
+      &__content {
+         max-width: none;
+      }
+
+      &__subtitle,
+      &__text {
+         margin-bottom: 2rem;
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   .project__img_small {
+      top: unset;
+      bottom: -3rem;
+      max-width: 15rem;
+      transform: translate(0);
+   }
+}
