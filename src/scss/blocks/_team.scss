@@ -1,0 +1,132 @@
+.team {
+   overflow: hidden;
+
+   &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6rem;
+   }
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      padding-right: 6rem;
+      position: relative;
+
+      &::after {
+         content: '';
+         position: absolute;
+         height: 100%;
+         width: 1px;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         background: $secondary-gradient-fading;
+      }
+   }
+
+   &__items-col {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+   }
+
+   &__items-col:first-child {
+      margin-top: 6rem;
+   }
+
+   &__item {
+      text-align: center;
+      color: $secondary-light-color;
+   }
+
+   &__item-img {
+      margin-bottom: 3rem;
+   }
+
+   &__item-name {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+   }
+
+   &__item-post {
+      font-weight: $gilroy-font;
+   }
+
+   &__info {
+      padding: 10rem 0 6rem 6rem;
+      background-color: $secondary-dark-color;
+      position: relative;
+
+      &::after {
+         content: '';
+         position: absolute;
+         height: 100%;
+         width: 100vw;
+         right: -100vw;
+         top: 0;
+         background-color: $secondary-dark-color;
+      }
+   }
+
+   &__title,
+   &__text  {
+      margin-bottom: 3rem;
+      max-width: 37.5rem;
+   }
+}
+
+
+@media (max-width: 1024px) {
+   .team {
+      &__inner {
+         gap: 3rem;
+      }
+      &__items {
+         padding-right: 3rem;
+      }
+      &__item-img {
+         width: 20rem;
+      }
+      &__info {
+         padding: 4rem 0 4rem 4rem;
+      }
+      &__title {
+         font-size: 5.8rem;
+         line-height: normal;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .team {
+      background-color: $secondary-dark-color;
+      &__inner {
+         display: block;
+      }
+      &__items {
+         padding: 0;
+         justify-content: center;
+         margin-bottom: 6rem;
+         &::after {
+            display: none;
+         }
+      }
+      &__item-img {
+         width: 100%;
+      }
+      &__info {
+         padding: 0;
+         &::after {
+            display: none;
+         }
+      }
+      &__title,
+      &__text {
+         max-width: unset;
+      }
+   }
+}

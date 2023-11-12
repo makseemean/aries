@@ -13,7 +13,8 @@ $secondary-light-color: #B8B8B8;
 $tertiary-light-color: #b8b8b880;
 $pattern-light-color: #FFFFFF;
 
-$primary-gradient: linear-gradient(97deg, #99A9FF 20.47%, #5CE4CF 100%);;
+$primary-gradient: linear-gradient(97deg, #99A9FF 20.47%, #5CE4CF 100%);
+$secondary-gradient-fading: linear-gradient(97deg, transparent, #99A9FF, transparent), linear-gradient(97deg, transparent, #5CE4CF, transparent);
 
 
 // fonts
