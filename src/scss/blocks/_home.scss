@@ -1,6 +1,5 @@
 .home {
    text-align: center;
-   height: 90rem;
 
    .container {
       height: 100%;
@@ -32,7 +31,7 @@
 
 @media (max-width: 768px) {
    .home {
-      height: calc(100vh - 90px);
+      height: 35rem;
 
       &__inner {
          padding-top: 10rem;
