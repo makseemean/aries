@@ -72,7 +72,9 @@
       }
    }
 
-   &__title,
+   &__title {
+      margin-bottom: 2rem;
+   }
    &__text  {
       margin-bottom: 3rem;
       max-width: 37.5rem;
@@ -101,13 +103,14 @@
 @media (max-width: 768px) {
    .team {
       background-color: $secondary-dark-color;
+      padding-top: 5rem;
       &__inner {
          display: block;
       }
       &__items {
          padding: 0;
          justify-content: center;
-         margin-bottom: 6rem;
+         margin-bottom: 5rem;
          &::after {
             display: none;
          }

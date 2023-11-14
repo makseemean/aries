@@ -112,11 +112,16 @@
       padding-bottom: 5rem;
 
       &__block {
-         display: block;
+         flex-direction: column;
+         gap: 0 !important;
+      }
+
+      &__top {
+         margin-bottom: 5rem;
       }
 
       &__middle {
-         margin-bottom: 8rem;
+         margin-bottom: 5rem;
       }
 
       &__images {
@@ -127,7 +132,8 @@
          }
 
          &_bottom {
-            margin-top: 5rem;
+            margin-bottom: 5rem;
+            order: 1;
          }
       }
 
@@ -149,6 +155,10 @@
       &__text {
          margin-bottom: 2rem;
       }
+   }
+
+   .project__bottom .project__content {
+      order: 2;
    }
 }
 
