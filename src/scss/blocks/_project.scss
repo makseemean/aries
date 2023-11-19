@@ -111,6 +111,11 @@
       padding-top: 10rem;
       padding-bottom: 5rem;
 
+      &__name {
+         font-size: 1.2rem;
+         line-height: normal;
+      }
+
       &__block {
          flex-direction: column;
          gap: 0 !important;
