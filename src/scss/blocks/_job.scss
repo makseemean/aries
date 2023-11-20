@@ -6,14 +6,12 @@
       position: absolute;
       height: 1px;
       width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
       left: 0;
       right: 0;
-      top: 20rem;
+      top: 15rem;
       background: $secondary-gradient-fading;
-   }
-
-   :last-child::before {
-      display: none;
    }
 
    &__title {
@@ -75,6 +73,11 @@
          bottom: 0;
          background: $primary-color;
       }
+
+      &:last-child::before {
+         display: none;
+      }
+
    }
 
    &__project-name {
@@ -167,6 +170,10 @@
       &__projects {
          order: 2;
          max-width: unset;
+      }
+
+      &__project:last-child {
+         padding-bottom: 0;
       }
 
       &__project-name {
