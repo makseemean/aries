@@ -1,0 +1,16 @@
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba($pattern-dark-color, .85);
+   z-index: 90;
+   transition: all .3s;
+   visibility: hidden;
+   opacity: 0;
+   &_active {
+      visibility: visible;
+      opacity: 1;
+   }
+}

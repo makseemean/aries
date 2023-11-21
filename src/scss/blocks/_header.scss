@@ -26,6 +26,14 @@
       text-transform: uppercase;
       line-height: normal;
       color: $primary-light-color;
+      transition: all .3s;
+
+      @media (min-width: 768px) {
+         &:hover {
+            color: $primary-color;
+         }
+      }
+
    }
 }
 
@@ -39,6 +47,13 @@
    display: flex;
    align-items: center;
    gap: 0.5rem;
+
+   @media (min-width: 768px) {
+      &:hover {
+         color: $secondary-color;
+      }
+   }
+
 }
 
 @media (max-width: 768px) {
@@ -62,10 +77,12 @@
    .menu {
       &__item {
          display: none;
+
          &_logo {
             display: block;
             margin: 0;
          }
+
          &_aside-btn {
             display: block;
          }
