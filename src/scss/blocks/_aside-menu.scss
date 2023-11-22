@@ -5,8 +5,8 @@
    bottom: 0;
    width: 25rem;
    z-index: 100;
-   // transform: translateX(300%);
-   // transition: all .3s ease;
+   transform: translateX(300%);
+   transition: all .3s ease;
 
    background-color: $primary-dark-color;
    border-left: 1px solid $pattern-light-color;
@@ -25,15 +25,6 @@
       gap: 1rem;
       padding: 3rem;
       background-color: #1a1a1a;
-   }
-
-   &__title {
-      font-family: $ginora-font;
-      color: $pattern-light-color;
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      line-height: 2.4rem;
-      font-weight: 700;
    }
 
    &__close {
@@ -55,10 +46,6 @@
    }
 
    &__item {
-      &_mobile {
-         display: none;
-      }
-
       @media (min-width: 768px) {
          &:hover {
             background-color: $secondary-dark-color;
@@ -88,12 +75,6 @@
    }
 }
 
-@media (max-width: 768px) {
-   .aside-menu {
-      &__item {
-         &_mobile {
-            display: block;
-         }
-      }
-   }
+.logo_small img {
+   max-width: 8rem;
 }
