@@ -85,10 +85,6 @@
    }
 
    &__project-name {
-      font-family: $ginora-font;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      color: $tertiary-light-color;
       margin-bottom: 5px;
    }
 
@@ -179,11 +175,6 @@
       &__project:last-child {
          padding-bottom: 0;
          margin-bottom: 4rem;
-      }
-
-      &__project-name {
-         font-size: 1.2rem;
-         line-height: normal;
       }
 
       &__project-info {
