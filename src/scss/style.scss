@@ -17,12 +17,18 @@
 
 /*==================== BLOCKS ====================*/
 @import 'blocks/header';
-@import 'blocks/home';
-@import 'blocks/program';
-@import 'blocks/project';
-@import 'blocks/team';
-@import 'blocks/job';
-@import 'blocks/footer';
 @import 'blocks/aside-menu';
-@import 'blocks/program-home';
-@import 'blocks/program-about';
+@import 'blocks/footer';
+
+/*==================== INDEX PAGE ====================*/
+@import 'blocks/index-page/home.scss';
+@import 'blocks/index-page/program';
+@import 'blocks/index-page/project';
+@import 'blocks/index-page/team';
+@import 'blocks/index-page/job';
+
+
+/*==================== PROGRAM PAGE ====================*/
+@import 'blocks/program-page/program-home';
+@import 'blocks/program-page/program-about';
+@import 'blocks/program-page/program-startaps';
