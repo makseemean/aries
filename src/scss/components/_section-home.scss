@@ -1,4 +1,4 @@
-.program-home {
+.section-home {
    position: relative;
    margin: 5rem auto 0;
    max-width: 1160px;
@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 425px) {
-   .program-home__title {
+   .section-home__title {
       left: 1rem;
       bottom: 1rem;
    }
