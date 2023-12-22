@@ -1,0 +1,89 @@
+.team-crew {
+   &__inner {
+      max-width: 79rem;
+      margin: 0 auto;
+   }
+
+   &__line {
+      height: 1px;
+      width: 100%;
+      background: $secondary-gradient-fading;
+      margin: 4rem 0;
+   }
+
+   &__descr {
+      max-width: 79rem;
+      margin: 0 auto 12rem auto;
+   }
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+      gap: 30px;
+   }
+
+   &__item {
+      text-align: center;
+      color: $secondary-light-color;
+      padding: 3rem;
+      max-width: 32rem;
+      transition: all .3s ease;
+
+      @media (min-width: 768px) {
+         &:hover {
+            background-color: $secondary-dark-color;
+            color: $pattern-light-color;
+         }
+      }
+   }
+
+   &__item-img {
+      margin-bottom: 3rem;
+      width: 100%;
+   }
+
+   &__item-name {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+   }
+
+   &__item-post {
+      font-family: $ginora-font;
+      line-height: normal;
+   }
+}
+
+@media (max-width: 768px) {
+   .team-crew {
+      &__descr {
+         margin: 0 auto 7rem auto;
+      }
+
+      &__items {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      &__item {
+         padding: 0;
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   .team-crew {
+      &__descr {
+         margin: 0 auto 4rem auto;
+      }
+
+      &__item-img {
+         margin-bottom: 2rem;
+      }
+
+      &__item-name {
+         font-size: 2rem;
+         line-height: 2.4rem;
+      }
+   }
+}
