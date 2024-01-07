@@ -15,6 +15,7 @@
 @import 'components/overlay';
 @import 'components/name';
 @import 'components/section-home.scss';
+@import 'components/line.scss';
 
 /*==================== BLOCKS ====================*/
 @import 'blocks/header';
@@ -38,3 +39,4 @@
 
 /*==================== JOB PAGE ====================*/
 @import 'blocks/job-page/job-apply';
+@import 'blocks/job-page/job-portfolio';

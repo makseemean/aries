@@ -4,13 +4,6 @@
       margin: 0 auto;
    }
 
-   &__line {
-      height: 1px;
-      width: 100%;
-      background: $secondary-gradient-fading;
-      margin: 4rem 0;
-   }
-
    &__descr {
       max-width: 79rem;
       margin: 0 auto 12rem auto;
@@ -52,6 +45,10 @@
    &__item-post {
       font-family: $ginora-font;
       line-height: normal;
+   }
+
+   .line {
+      margin: 4rem 0;
    }
 }
 
