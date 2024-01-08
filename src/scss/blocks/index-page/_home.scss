@@ -32,10 +32,11 @@
 
 @media (max-width: 768px) {
    .home {
-      height: 40rem;
+      height: 45rem;
+      padding-top: 15rem;
 
       &__inner {
-         padding-top: 10rem;
+         padding-top: 0;
       }
 
       &__title {

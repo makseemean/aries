@@ -28,6 +28,10 @@
       color: $primary-light-color;
       transition: all .3s;
 
+      &_active {
+         color: $primary-color;
+      }
+
       @media (min-width: 768px) {
          &:hover {
             color: $primary-color;
@@ -58,8 +62,14 @@
 
 @media (max-width: 768px) {
    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+
       margin: 0;
-      padding: 3.5rem 0 3rem 0;
+      padding: 3rem 0;
       background-color: $secondary-dark-color;
 
       &__inner {
@@ -69,8 +79,12 @@
    }
 
    .logo {
+      transition: all .3s;
       &__img {
          width: 85px;
+      }
+      &_hide {
+         opacity: 0;
       }
    }
 

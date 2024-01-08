@@ -42,6 +42,12 @@
          bottom: 0px;
          left: 3rem;
          background-color: $primary-color;
+         transition: all .7s;
+      }
+
+      &:focus-within::after {
+         width: 100%;
+         left: 0;
       }
    }
 

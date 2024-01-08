@@ -59,6 +59,9 @@
       color: $secondary-light-color;
       text-align: left;
       padding: 1rem 3rem;
+      &_active {
+         background-color: $secondary-dark-color;
+      }
    }
 
    &__link-title {
