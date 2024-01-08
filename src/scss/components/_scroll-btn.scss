@@ -1,0 +1,31 @@
+.scroll-btn {
+   position: fixed;
+   right: 6rem;
+   bottom: 6rem;
+   z-index: 100;
+
+   width: 3rem;
+   height: 3rem;
+   background-color: $secondary-dark-color;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   transition: all .3s;
+
+   border: 1px solid #ffff;
+
+   visibility: hidden;
+   opacity: 0;
+
+   &_active {
+      visibility: visible;
+      opacity: 1;
+   }
+}
+
+@media (max-width: 768px) {
+   .scroll-btn {
+      display: none;
+   }
+}

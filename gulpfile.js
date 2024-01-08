@@ -1,16 +1,24 @@
-const { src, dest, watch, parallel, series } = require('gulp');
+const { src, dest, watch, parallel, series, } = require('gulp');
 
-const scss         = require('gulp-sass')(require('sass'));
-const concat       = require('gulp-concat');
-const browserSync  = require('browser-sync').create();
-const uglify       = require('gulp-uglify-es').default;
+const scss = require('gulp-sass')(require('sass'));
+const concat = require('gulp-concat');
+const browserSync = require('browser-sync').create();
+const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
-const imagemin     = require('gulp-imagemin');
-const del          = require('del');
+const imagemin = require('gulp-imagemin');
+const del = require('del');
+const ghPages = require('gh-pages');
+const path = require('path');
+
+function deploy(cb) {
+    ghPages.publish(path.join(process.cwd(), './dist'), cb);
+}
+
+exports.deploy = deploy;
 
 function browsersync() {
     browserSync.init({
-        server : {
+        server: {
             baseDir: 'src/'
         }
     });
@@ -24,13 +32,13 @@ function images() {
     return src('src/images/**/*')
         .pipe(imagemin(
             [
-                imagemin.gifsicle({interlaced: true}),
-                imagemin.mozjpeg({quality: 85, progressive: true}),
-                imagemin.optipng({optimizationLevel: 5}),
+                imagemin.gifsicle({ interlaced: true }),
+                imagemin.mozjpeg({ quality: 85, progressive: true }),
+                imagemin.optipng({ optimizationLevel: 5 }),
                 imagemin.svgo({
                     plugins: [
-                        {removeViewBox: true},
-                        {cleanupIDs: false}
+                        { removeViewBox: true },
+                        { cleanupIDs: false }
                     ]
                 })
             ]
@@ -44,15 +52,15 @@ function scripts() {
         // 'node_modules/slick-carousel/slick/slick.js', // подключить слайдер
         'src/js/main.js'
     ])
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(dest('src/js'))
-    .pipe(browserSync.stream())
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(dest('src/js'))
+        .pipe(browserSync.stream())
 }
 
 function styles() {
     return src('src/scss/style.+(scss|sass)')
-        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
@@ -64,11 +72,11 @@ function styles() {
 
 function build() {
     return src([
-        'src/css/style.min.css', 
+        'src/css/style.min.css',
         'src/fonts/**/*',
         'src/js/main.min.js',
         'src/*.html'
-    ], {base: 'src'})
+    ], { base: 'src' })
         .pipe(dest('dist'))
 }
 
@@ -86,6 +94,6 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles ,scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, browsersync, watching);
 
 

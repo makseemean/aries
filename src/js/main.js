@@ -32,7 +32,7 @@ document.body.onload = () => {
          preloader.classList.add('loader_done');
          setTimeout(removeBodyStyles, 500);
       }
-   }, 300);
+   }, 500);
 }
 
 // Aside menu
@@ -121,3 +121,20 @@ if (document.querySelector('.program-page')) {
       },
    });
 }
+
+// Scroll btn
+
+const scrollBtn = document.querySelector('.scroll-btn ');
+
+window.addEventListener('scroll', function () {
+   if (pageYOffset > 450) {
+      scrollBtn.classList.add('scroll-btn_active');
+   }
+   else if (pageYOffset < 450) {
+      scrollBtn.classList.remove('scroll-btn_active');
+   }
+});
+
+scrollBtn.addEventListener('click', () => {
+   window.scrollTo(0, 0);
+});
