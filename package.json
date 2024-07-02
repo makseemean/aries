@@ -19,5 +19,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^2.0.0",
     "sass": "^1.45.2"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
   }
 }

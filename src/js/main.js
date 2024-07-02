@@ -1,15 +1,10 @@
-// Scripts for Program page
-
 // Scroll bar width
 
 const div = document.createElement('div');
 
 div.style.cssText = 'overflow-y: scroll; height: 50px; width: 50px;';
-
 document.body.append(div);
-
 const scrollWidth = div.offsetWidth - div.clientWidth;
-
 div.remove();
 
 // Preloader
@@ -17,11 +12,11 @@ div.remove();
 const preloader = document.querySelector('.loader');
 
 function addBodyStyles() {
-   document.body.style.cssText = `overflow: hidden; padding-right: ${scrollWidth}px`;
+   // document.body.style.cssText = `overflow: hidden; padding-right: ${scrollWidth}px`;
 }
 
 function removeBodyStyles() {
-   document.body.style.cssText = 'overflow: auto; padding-right: 0`';
+   // document.body.style.cssText = `overflow: auto; padding-right: 0; height: ${document.body.clientHeight} !important;`;
 }
 
 addBodyStyles();
@@ -138,3 +133,29 @@ window.addEventListener('scroll', function () {
 scrollBtn.addEventListener('click', () => {
    window.scrollTo(0, 0);
 });
+
+// Gsap scroll animation
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+if (ScrollTrigger.isTouch !== 1) {
+   ScrollSmoother.create({
+      wrapper: '.wrapper',
+      content: '.content',
+      smooth: 1.5,
+      effects: true
+   });
+}
+
+// let projectItems = gsap.utils.toArray('.project__block');
+
+// projectItems.forEach(item => {
+//    gsap.fromTo(item, { y: -50, opacity: 0 }, {
+//       opacity: 1,
+//       y: 0,
+//       scrollTrigger: {
+//          trigger: item,
+//          scrub: true
+//       }
+//    });
+// });
