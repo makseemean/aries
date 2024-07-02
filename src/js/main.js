@@ -1,11 +1,11 @@
 // Scroll bar width
 
-const div = document.createElement('div');
+// const div = document.createElement('div');
 
-div.style.cssText = 'overflow-y: scroll; height: 50px; width: 50px;';
-document.body.append(div);
-const scrollWidth = div.offsetWidth - div.clientWidth;
-div.remove();
+// div.style.cssText = 'overflow-y: scroll; height: 50px; width: 50px;';
+// document.body.append(div);
+// const scrollWidth = div.offsetWidth - div.clientWidth;
+// div.remove();
 
 // Preloader
 
