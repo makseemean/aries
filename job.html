@@ -20,348 +20,363 @@
 <body>
 
    <div class="wrapper">
-      <header class="header">
-         <div class="container">
-            <div class="header__inner">
-               <nav class="menu">
-                  <ul class="menu__list">
-                     <li class="menu__item">
-                        <a class="menu__link" href="./program.html">program</a>
-                     </li>
-                     <li class="menu__item">
-                        <a class="menu__link" href="./team.html">team</a>
-                     </li>
-                     <li class="menu__item menu__item_logo">
-                        <a class="logo" href="./index.html">
-                           <img class="logo__img" src="./images/logo.svg" alt="Aries">
+      <div class="content">
+         <header class="header">
+            <div class="container">
+               <div class="header__inner">
+                  <nav class="menu">
+                     <ul class="menu__list">
+                        <li class="menu__item">
+                           <a class="menu__link" href="./program.html">program</a>
+                        </li>
+                        <li class="menu__item">
+                           <a class="menu__link" href="./team.html">team</a>
+                        </li>
+                        <li class="menu__item menu__item_logo">
+                           <a class="logo" href="./index.html">
+                              <img class="logo__img" src="./images/logo.svg" alt="Aries">
+                           </a>
+                        </li>
+                        <li class="menu__item">
+                           <span class="menu__link menu__link_active">JOBS</span>
+                        </li>
+                        <li class="menu__item menu__item_aside-btn">
+                           <button class="menu__link aside-menu-btn">
+                              <span>MENU</span>
+                              <img src="./images/icons/menu.svg" alt="aside menu button">
+                           </button>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </header>
+
+         <button class="scroll-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+               <path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z" fill="#ffffff" />
+            </svg>
+         </button>
+
+         <div class="loader">
+            <div class="loader__inner">
+               <span class="loader__spinner"></span>
+               <div class="loader__text">
+                  Loading...
+                  <div>Please Wait</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="overlay"></div>
+
+         <aside class="aside-menu">
+            <div class="aside-menu__top">
+               <a class="logo logo_small" href="./index.html">
+                  <img class="logo__img" src="./images/logo.svg" alt="">
+               </a>
+               <button class="aside-menu__close">
+                  <img src="./images/icons/cross.svg" alt="close icon">
+               </button>
+            </div>
+            <ul class="aside-menu__list">
+               <li class="aside-menu__item">
+                  <a class="aside-menu__link" href="./index.html">
+                     <span class="aside-menu__link-title">Home</span>
+                     <span class="aside-menu__link-descr">We Start Here</span>
+                  </a>
+               </li>
+               <li class="aside-menu__item">
+                  <a class="aside-menu__link" href="./program.html">
+                     <span class="aside-menu__link-title">Program</span>
+                     <span class="aside-menu__link-descr">Our Featured Programs</span>
+                  </a>
+               </li>
+               <li class="aside-menu__item">
+                  <a class="aside-menu__link" href="./team.html">
+                     <span class="aside-menu__link-title">Team</span>
+                     <span class="aside-menu__link-descr">About our people</span>
+                  </a>
+               </li>
+               <li class="aside-menu__item">
+                  <span class="aside-menu__link aside-menu__link_active">
+                     <span class="aside-menu__link-title">Jobs</span>
+                     <span class="aside-menu__link-descr">Cooperation and requirements</span>
+                  </span>
+               </li>
+            </ul>
+         </aside>
+
+         <main class="main job-page">
+            <section class="job-home section-home">
+               <picture>
+                  <source srcset="./images/job-home-bg-mobile.jpg" media="(max-width: 768px)">
+                  <img data-speed=".9" class="job-home__img section-home__img" src="./images/job-home-bg.jpg" alt="ai">
+               </picture>
+               <h1 class="job-home__title section-home__title title title_h2">
+                  Latest
+                  <span> Portfolio Jobs.</span>
+               </h1>
+            </section>
+
+            <section class="job-apply section">
+               <div class="container">
+                  <div class="job-apply__top job-top">
+                     <div class="job-top__block">
+                        <div class="job-top__name name">CYPHER</div>
+                        <div class="job-top__btns">
+                           <button class="job-top__btn">
+                              <span class="job-top__btn-icon">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M11.2494 0.643433H3.03767C1.71695 0.643433 0.642578 1.66409 0.642578 2.91877V13.6454L5.43277 11.37L10.223 13.6454V7.79451H13.6445V2.91877C13.6445 1.66409 12.5702 0.643433 11.2494 0.643433ZM8.85434 11.5417L5.43277 9.91642L2.0112 11.5417V2.91877C2.0112 2.38114 2.47175 1.94363 3.03767 1.94363H9.09521C8.93859 2.24728 8.85625 2.58063 8.85434 2.91877V11.5417ZM12.2759 6.49431H10.223V2.91877C10.223 2.38114 10.6835 1.94363 11.2494 1.94363C11.8154 1.94363 12.2759 2.38114 12.2759 2.91877V6.49431Z"
+                                       fill="#C4C4C4" />
+                                    <path
+                                       d="M6.11811 3.89404H4.74949V5.19424H3.38086V6.49443H4.74949V7.79463H6.11811V6.49443H7.48674V5.19424H6.11811V3.89404Z"
+                                       fill="#C4C4C4" />
+                                 </svg>
+                              </span>
+                              <span class="job-top__btn-text">Save</span>
+                           </button>
+                           <button class="job-top__btn">
+                              <span class="job-top__btn-icon">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M0.71875 3.14381C0.71875 2.48067 0.963365 1.84469 1.39878 1.37578C1.8342 0.906864 2.42475 0.643433 3.04053 0.643433H6.75537C7.37114 0.643433 7.9617 0.906864 8.39711 1.37578C8.83253 1.84469 9.07715 2.48067 9.07715 3.14381V3.64388H8.14844V3.14381C8.14844 2.74592 8.00167 2.36434 7.74042 2.08299C7.47917 1.80164 7.12483 1.64358 6.75537 1.64358H3.04053C2.67106 1.64358 2.31673 1.80164 2.05548 2.08299C1.79423 2.36434 1.64746 2.74592 1.64746 3.14381V7.14441C1.64746 7.54229 1.79423 7.92388 2.05548 8.20523C2.31673 8.48657 2.67106 8.64463 3.04053 8.64463H8.22738C8.33692 8.31098 8.55246 8.02976 8.8359 7.8507C9.11935 7.67163 9.45246 7.60624 9.77634 7.66609C10.1002 7.72593 10.394 7.90716 10.6059 8.17773C10.8177 8.44831 10.9338 8.79081 10.9338 9.14471C10.9338 9.4986 10.8177 9.84111 10.6059 10.1117C10.394 10.3823 10.1002 10.5635 9.77634 10.6233C9.45246 10.6832 9.11935 10.6178 8.8359 10.4387C8.55246 10.2597 8.33692 9.97844 8.22738 9.64478H3.04053C2.42475 9.64478 1.8342 9.38135 1.39878 8.91244C0.963365 8.44353 0.71875 7.80755 0.71875 7.14441V3.14381ZM5.3623 10.6449V11.145C5.3623 11.8081 5.60692 12.4441 6.04234 12.913C6.47775 13.382 7.06831 13.6454 7.68408 13.6454H11.3989C12.0147 13.6454 12.6052 13.382 13.0407 12.913C13.4761 12.4441 13.7207 11.8081 13.7207 11.145V7.14441C13.7207 6.48127 13.4761 5.84529 13.0407 5.37638C12.6052 4.90746 12.0147 4.64403 11.3989 4.64403H6.21207C6.10253 4.31038 5.88699 4.02916 5.60355 3.8501C5.3201 3.67103 4.98699 3.60564 4.66311 3.66549C4.33922 3.72533 4.04541 3.90656 3.8336 4.17713C3.62178 4.44771 3.50561 4.79021 3.50561 5.14411C3.50561 5.498 3.62178 5.84051 3.8336 6.11108C4.04541 6.38166 4.33922 6.56288 4.66311 6.62273C4.98699 6.68257 5.3201 6.61718 5.60355 6.43812C5.88699 6.25905 6.10253 5.97784 6.21207 5.64418H11.3989C11.7684 5.64418 12.1227 5.80224 12.384 6.08359C12.6452 6.36493 12.792 6.74652 12.792 7.14441V11.145C12.792 11.5429 12.6452 11.9245 12.384 12.2058C12.1227 12.4872 11.7684 12.6452 11.3989 12.6452H7.68408C7.31462 12.6452 6.96028 12.4872 6.69903 12.2058C6.43778 11.9245 6.29101 11.5429 6.29101 11.145V10.6449H5.3623Z"
+                                       fill="#C4C4C4" />
+                                 </svg>
+                              </span>
+                              <span class="job-top__btn-text">Share</span>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="job-top__title title title_h2">
+                        head of growth -
+                        medical device startup.
+                     </div>
+                     <div class="job-top__block">
+                        <div class="job-top__info">
+                           Silicon Valley - California, USA
+                        </div>
+                        <div class="job-top__info">
+                           Posted 7 days ago - 72 applicants
+                        </div>
+                     </div>
+                     <div class="line"></div>
+                  </div>
+                  <div class="job-apply__middle job-middle">
+                     <div class="job-middle__block">
+                        <div class="job-middle__skills">
+                           <div class="job-middle__name">experience</div>
+                           <div class="job-middle__value">minimum 1 year</div>
+                        </div>
+                        <div class="job-middle__skills">
+                           <div class="job-middle__name">work level</div>
+                           <div class="job-middle__value">senior level</div>
+                        </div>
+                        <div class="job-middle__skills">
+                           <div class="job-middle__name">employee type</div>
+                           <div class="job-middle__value">full time job</div>
+                        </div>
+                        <div class="job-middle__skills">
+                           <div class="job-middle__name">offer salary</div>
+                           <div class="job-middle__value">$2750.0 / month</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="job-apply__bottom job-bottom">
+                     <div class="job-bottom__block">
+                        <div class="job-bottom__name name">overview</div>
+                        <p class="job-bottom__text">
+                           Deeply understand our customers, our product, and our business strategies.
+                           Together with CEO and small team establish strategy and OKRs for all growth marketing
+                           programs
+                           and monitor investments to deliver improved ROI performance.
+                           Owning and driving budgets across the channel mix.
+                        </p>
+                     </div>
+                     <div class="job-bottom__block">
+                        <div class="job-bottom__name name">job description</div>
+                        <p class="job-bottom__text">
+                           We are now looking for our Head of Growth.
+                        </p>
+                        <p class="job-bottom__text">
+                           This position is for you, if you: are excited to bring a new treatments to the world for
+                           diseases that affect billions of people worldwide.
+                           want to work in the intersection of medical technology, digital health, hardware, psychology
+                           and
+                           artificial intelligence.
+                        </p>
+                        <p class="job-bottom__text">
+                           have a strong passion and integrity for what you do and want to challenge the way we treat
+                           mental health problems today.
+                           enjoy being one of the first employees in a startup with truly global potential and
+                           ambitions,
+                           and be a part of shaping the culture and future of the company. are a natural leader that
+                           will
+                           scale with the organisation as it grows.
+                        </p>
+                     </div>
+                     <div class="job-bottom__block">
+                        <div class="job-bottom__name name">Responsibilities</div>
+                        <p class="job-bottom__text">
+                           We are now looking for our Head of Growth.
+                        </p>
+                        <p class="job-bottom__text">
+                           Deeply understand our customers, our product, and our business strategies.
+                           Together with CEO and small team establish strategy and OKRs for all growth marketing
+                           programs
+                           and monitor investments to deliver improved ROI performance.
+                           Owning and driving budgets across the channel mix.
+                        </p>
+                        <p class="job-bottom__text">
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatem pariatur labore
+                           tempora quidem quae, neque quasi inventore! Reiciendis explicabo pariatur adipisci ab,
+                           aperiam maxime illum fuga dolorem reprehenderit sit, voluptas ex, repellendus autem saepe
+                           praesentium. Explicabo, aut fugit ex facere consequuntur aliquam rem labore, perspiciatis
+                           dolores ipsam aperiam commodi!
+                        </p>
+                     </div>
+                     <a class="job-bottom__link link link_primary-color" href="#!">apply to job</a>
+                  </div>
+               </div>
+            </section>
+
+            <section class="job-portfolio section">
+               <div class="container">
+                  <div class="job-portfolio__inner">
+                     <div class="job-portfolio__projects">
+                        <a class="job-portfolio__project" href="#!">
+                           <div class="job-portfolio__project-name name">KAWASKI</div>
+                           <h3 class="job-portfolio__project-title title title_h3">
+                              Sales Intern -
+                              <span>Right Hand to the COO</span>
+                           </h3>
+                           <div class="job-portfolio__project-info">
+                              Internship - Paris - marketing
+                           </div>
                         </a>
+                        <a class="job-portfolio__project" href="#!">
+                           <div class="job-portfolio__project-name name">CYPHER</div>
+                           <h3 class="job-portfolio__project-title title title_h3">
+                              head of growth -
+                              <span>medical device startup</span>
+                           </h3>
+                           <div class="job-portfolio__project-info">
+                              full time - remote - business develepoment
+                           </div>
+                        </a>
+                        <a class="job-portfolio__project" href="#!">
+                           <div class="job-portfolio__project-name name">ORDIX</div>
+                           <h3 class="job-portfolio__project-title title title_h3">
+                              Software Developer -
+                              <span>Robot Systems</span>
+                           </h3>
+                           <div class="job-portfolio__project-info">
+                              ful time - remote - Software
+                           </div>
+                        </a>
+                        <a class="job-portfolio__project" href="#!">
+                           <div class="job-portfolio__project-name name">rovenso</div>
+                           <h3 class="job-portfolio__project-title title title_h3">
+                              Robotics Software
+                              <span>Engineer</span>
+                           </h3>
+                           <div class="job-portfolio__project-info">
+                              full time - remote - Software
+                           </div>
+                        </a>
+                        <a class="job-portfolio__project" href="#!">
+                           <div class="job-portfolio__project-name name">rockmass</div>
+                           <h3 class="job-portfolio__project-title title title_h3">
+                              Computer Vision Software
+                              <span>Engineer</span>
+                           </h3>
+                           <div class="job-portfolio__project-info">
+                              full time - remote - Software
+                           </div>
+                        </a>
+                     </div>
+                     <div class="job-portfolio__categories">
+                        <h4 class="job-portfolio__categories-title title title_h4">job categories</h4>
+                        <a class="job-portfolio__category" href="#!">Business development</a>
+                        <a class="job-portfolio__category" href="#!">Data Science</a>
+                        <a class="job-portfolio__category" href="#!">Finance</a>
+                        <a class="job-portfolio__category" href="#!">Human Resources</a>
+                        <a class="job-portfolio__category" href="#!">Software</a>
+                        <a class="job-portfolio__category" href="#!">Operations</a>
+                        <a class="job-portfolio__category" href="#!">Marketing</a>
+                     </div>
+                  </div>
+                  <a class="job-portfolio__link link link_primary-color" href="#!">next jobs</a>
+               </div>
+            </section>
+         </main>
+
+         <footer class="footer section">
+            <div class="container">
+               <div class="footer__top">
+                  <div class="footer__content">
+                     <h2 class="footer__title title title_h2">
+                        we help you to turn
+                        <span>ideas into reality.</span>
+                     </h2>
+                     <div class="footer__text">
+                        if your research processes have unique features, and you are looking for an individual funding
+                        solution - we can help.
+                     </div>
+                  </div>
+                  <form class="footer__form">
+                     <div class="footer__input-inner">
+                        <input autocomplete="off" class="footer__input" type="text" placeholder="Name*" name="name">
+                     </div>
+                     <div class="footer__input-inner">
+                        <input autocomplete="off" class="footer__input" type="email" placeholder="Email*" name="email">
+                     </div>
+                     <div class="footer__input-inner">
+                        <input autocomplete="off" class="footer__input" type="text" placeholder="Message*"
+                           name="message">
+                     </div>
+                     <button class="footer__btn link link_primary-color" type="submit">get in touch</button>
+                  </form>
+               </div>
+               <div class="footer__middle">
+                  <ul class="footer__socials">
+                     <li>
+                        <a class="footer__social" href="#!">linkedin</a>
                      </li>
-                     <li class="menu__item">
-                        <span class="menu__link menu__link_active">JOBS</span>
+                     <li>
+                        <a class="footer__social" href="#!">reddit</a>
                      </li>
-                     <li class="menu__item menu__item_aside-btn">
-                        <button class="menu__link aside-menu-btn">
-                           <span>MENU</span>
-                           <img src="./images/icons/menu.svg" alt="aside menu button">
-                        </button>
+                     <li>
+                        <a class="footer__social" href="#!">facebook</a>
+                     </li>
+                     <li>
+                        <a class="footer__social" href="#!">twitter</a>
+                     </li>
+                     <li>
+                        <a class="footer__social" href="#!">privacy & policy</a>
+                     </li>
+                     <li>
+                        <a class="footer__social" href="#!">cookies policy</a>
                      </li>
                   </ul>
-               </nav>
-            </div>
-         </div>
-      </header>
-
-      <button class="scroll-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-				<path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z" fill="#ffffff" />
-			</svg>
-		</button>
-
-		<div class="loader">
-			<div class="loader__inner">
-				<span class="loader__spinner"></span>
-				<div class="loader__text">
-					Loading...
-					<div>Please Wait</div>
-				</div>
-			</div>
-		</div>
-
-      <div class="overlay"></div>
-
-      <aside class="aside-menu">
-         <div class="aside-menu__top">
-            <a class="logo logo_small" href="./index.html">
-               <img class="logo__img" src="./images/logo.svg" alt="">
-            </a>
-            <button class="aside-menu__close">
-               <img src="./images/icons/cross.svg" alt="close icon">
-            </button>
-         </div>
-         <ul class="aside-menu__list">
-            <li class="aside-menu__item">
-               <a class="aside-menu__link" href="./index.html">
-                  <span class="aside-menu__link-title">Home</span>
-                  <span class="aside-menu__link-descr">We Start Here</span>
-               </a>
-            </li>
-            <li class="aside-menu__item">
-               <a class="aside-menu__link" href="./program.html">
-                  <span class="aside-menu__link-title">Program</span>
-                  <span class="aside-menu__link-descr">Our Featured Programs</span>
-               </a>
-            </li>
-            <li class="aside-menu__item">
-               <a class="aside-menu__link" href="./team.html">
-                  <span class="aside-menu__link-title">Team</span>
-                  <span class="aside-menu__link-descr">About our people</span>
-               </a>
-            </li>
-            <li class="aside-menu__item">
-               <span class="aside-menu__link aside-menu__link_active">
-                  <span class="aside-menu__link-title">Jobs</span>
-                  <span class="aside-menu__link-descr">Cooperation and requirements</span>
-               </span>
-            </li>
-         </ul>
-      </aside>
-
-      <main class="main job-page">
-         <section class="job-home section-home">
-            <picture>
-               <source srcset="./images/job-home-bg-mobile.jpg" media="(max-width: 768px)">
-               <img class="job-home__img section-home__img" src="./images/job-home-bg.jpg" alt="ai">
-            </picture>
-            <h1 class="job-home__title section-home__title title title_h2">
-               Latest
-               <span> Portfolio Jobs.</span>
-            </h1>
-         </section>
-
-         <section class="job-apply section">
-            <div class="container">
-               <div class="job-apply__top job-top">
-                  <div class="job-top__block">
-                     <div class="job-top__name name">CYPHER</div>
-                     <div class="job-top__btns">
-                        <button class="job-top__btn">
-                           <span class="job-top__btn-icon">
-                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M11.2494 0.643433H3.03767C1.71695 0.643433 0.642578 1.66409 0.642578 2.91877V13.6454L5.43277 11.37L10.223 13.6454V7.79451H13.6445V2.91877C13.6445 1.66409 12.5702 0.643433 11.2494 0.643433ZM8.85434 11.5417L5.43277 9.91642L2.0112 11.5417V2.91877C2.0112 2.38114 2.47175 1.94363 3.03767 1.94363H9.09521C8.93859 2.24728 8.85625 2.58063 8.85434 2.91877V11.5417ZM12.2759 6.49431H10.223V2.91877C10.223 2.38114 10.6835 1.94363 11.2494 1.94363C11.8154 1.94363 12.2759 2.38114 12.2759 2.91877V6.49431Z"
-                                    fill="#C4C4C4" />
-                                 <path
-                                    d="M6.11811 3.89404H4.74949V5.19424H3.38086V6.49443H4.74949V7.79463H6.11811V6.49443H7.48674V5.19424H6.11811V3.89404Z"
-                                    fill="#C4C4C4" />
-                              </svg>
-                           </span>
-                           <span class="job-top__btn-text">Save</span>
-                        </button>
-                        <button class="job-top__btn">
-                           <span class="job-top__btn-icon">
-                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M0.71875 3.14381C0.71875 2.48067 0.963365 1.84469 1.39878 1.37578C1.8342 0.906864 2.42475 0.643433 3.04053 0.643433H6.75537C7.37114 0.643433 7.9617 0.906864 8.39711 1.37578C8.83253 1.84469 9.07715 2.48067 9.07715 3.14381V3.64388H8.14844V3.14381C8.14844 2.74592 8.00167 2.36434 7.74042 2.08299C7.47917 1.80164 7.12483 1.64358 6.75537 1.64358H3.04053C2.67106 1.64358 2.31673 1.80164 2.05548 2.08299C1.79423 2.36434 1.64746 2.74592 1.64746 3.14381V7.14441C1.64746 7.54229 1.79423 7.92388 2.05548 8.20523C2.31673 8.48657 2.67106 8.64463 3.04053 8.64463H8.22738C8.33692 8.31098 8.55246 8.02976 8.8359 7.8507C9.11935 7.67163 9.45246 7.60624 9.77634 7.66609C10.1002 7.72593 10.394 7.90716 10.6059 8.17773C10.8177 8.44831 10.9338 8.79081 10.9338 9.14471C10.9338 9.4986 10.8177 9.84111 10.6059 10.1117C10.394 10.3823 10.1002 10.5635 9.77634 10.6233C9.45246 10.6832 9.11935 10.6178 8.8359 10.4387C8.55246 10.2597 8.33692 9.97844 8.22738 9.64478H3.04053C2.42475 9.64478 1.8342 9.38135 1.39878 8.91244C0.963365 8.44353 0.71875 7.80755 0.71875 7.14441V3.14381ZM5.3623 10.6449V11.145C5.3623 11.8081 5.60692 12.4441 6.04234 12.913C6.47775 13.382 7.06831 13.6454 7.68408 13.6454H11.3989C12.0147 13.6454 12.6052 13.382 13.0407 12.913C13.4761 12.4441 13.7207 11.8081 13.7207 11.145V7.14441C13.7207 6.48127 13.4761 5.84529 13.0407 5.37638C12.6052 4.90746 12.0147 4.64403 11.3989 4.64403H6.21207C6.10253 4.31038 5.88699 4.02916 5.60355 3.8501C5.3201 3.67103 4.98699 3.60564 4.66311 3.66549C4.33922 3.72533 4.04541 3.90656 3.8336 4.17713C3.62178 4.44771 3.50561 4.79021 3.50561 5.14411C3.50561 5.498 3.62178 5.84051 3.8336 6.11108C4.04541 6.38166 4.33922 6.56288 4.66311 6.62273C4.98699 6.68257 5.3201 6.61718 5.60355 6.43812C5.88699 6.25905 6.10253 5.97784 6.21207 5.64418H11.3989C11.7684 5.64418 12.1227 5.80224 12.384 6.08359C12.6452 6.36493 12.792 6.74652 12.792 7.14441V11.145C12.792 11.5429 12.6452 11.9245 12.384 12.2058C12.1227 12.4872 11.7684 12.6452 11.3989 12.6452H7.68408C7.31462 12.6452 6.96028 12.4872 6.69903 12.2058C6.43778 11.9245 6.29101 11.5429 6.29101 11.145V10.6449H5.3623Z"
-                                    fill="#C4C4C4" />
-                              </svg>
-                           </span>
-                           <span class="job-top__btn-text">Share</span>
-                        </button>
-                     </div>
-                  </div>
-                  <div class="job-top__title title title_h2">
-                     head of growth -
-                     medical device startup.
-                  </div>
-                  <div class="job-top__block">
-                     <div class="job-top__info">
-                        Silicon Valley - California, USA
-                     </div>
-                     <div class="job-top__info">
-                        Posted 7 days ago - 72 applicants
-                     </div>
-                  </div>
-                  <div class="line"></div>
                </div>
-               <div class="job-apply__middle job-middle">
-                  <div class="job-middle__block">
-                     <div class="job-middle__skills">
-                        <div class="job-middle__name">experience</div>
-                        <div class="job-middle__value">minimum 1 year</div>
-                     </div>
-                     <div class="job-middle__skills">
-                        <div class="job-middle__name">work level</div>
-                        <div class="job-middle__value">senior level</div>
-                     </div>
-                     <div class="job-middle__skills">
-                        <div class="job-middle__name">employee type</div>
-                        <div class="job-middle__value">full time job</div>
-                     </div>
-                     <div class="job-middle__skills">
-                        <div class="job-middle__name">offer salary</div>
-                        <div class="job-middle__value">$2750.0 / month</div>
-                     </div>
+               <div class="footer__bottom">
+                  <div class="footer__copy">all rights reserved by
+                     <a href="#!">DEVELOPER</a>
                   </div>
                </div>
-               <div class="job-apply__bottom job-bottom">
-                  <div class="job-bottom__block">
-                     <div class="job-bottom__name name">overview</div>
-                     <p class="job-bottom__text">
-                        Deeply understand our customers, our product, and our business strategies.
-                        Together with CEO and small team establish strategy and OKRs for all growth marketing programs
-                        and monitor investments to deliver improved ROI performance.
-                        Owning and driving budgets across the channel mix.
-                     </p>
-                  </div>
-                  <div class="job-bottom__block">
-                     <div class="job-bottom__name name">job description</div>
-                     <p class="job-bottom__text">
-                        We are now looking for our Head of Growth.
-                     </p>
-                     <p class="job-bottom__text">
-                        This position is for you, if you: are excited to bring a new treatments to the world for
-                        diseases that affect billions of people worldwide.
-                        want to work in the intersection of medical technology, digital health, hardware, psychology and
-                        artificial intelligence.
-                     </p>
-                     <p class="job-bottom__text">
-                        have a strong passion and integrity for what you do and want to challenge the way we treat
-                        mental health problems today.
-                        enjoy being one of the first employees in a startup with truly global potential and ambitions,
-                        and be a part of shaping the culture and future of the company. are a natural leader that will
-                        scale with the organisation as it grows.
-                     </p>
-                  </div>
-                  <div class="job-bottom__block">
-                     <div class="job-bottom__name name">Responsibilities</div>
-                     <p class="job-bottom__text">
-                        We are now looking for our Head of Growth.
-                     </p>
-                     <p class="job-bottom__text">
-                        Deeply understand our customers, our product, and our business strategies.
-                        Together with CEO and small team establish strategy and OKRs for all growth marketing programs
-                        and monitor investments to deliver improved ROI performance.
-                        Owning and driving budgets across the channel mix.
-                     </p>
-                     <p class="job-bottom__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatem pariatur labore tempora quidem quae, neque quasi inventore! Reiciendis explicabo pariatur adipisci ab, aperiam maxime illum fuga dolorem reprehenderit sit, voluptas ex, repellendus autem saepe praesentium. Explicabo, aut fugit ex facere consequuntur aliquam rem labore, perspiciatis dolores ipsam aperiam commodi!
-                     </p>
-                  </div>
-                  <a class="job-bottom__link link link_primary-color" href="#!">apply to job</a>
-               </div>
             </div>
-         </section>
-
-         <section class="job-portfolio section">
-            <div class="container">
-               <div class="job-portfolio__inner">
-                  <div class="job-portfolio__projects">
-                     <a class="job-portfolio__project" href="#!">
-                        <div class="job-portfolio__project-name name">KAWASKI</div>
-                        <h3 class="job-portfolio__project-title title title_h3">
-                           Sales Intern -
-                           <span>Right Hand to the COO</span>
-                        </h3>
-                        <div class="job-portfolio__project-info">
-                           Internship - Paris - marketing
-                        </div>
-                     </a>
-                     <a class="job-portfolio__project" href="#!">
-                        <div class="job-portfolio__project-name name">CYPHER</div>
-                        <h3 class="job-portfolio__project-title title title_h3">
-                           head of growth -
-                           <span>medical device startup</span>
-                        </h3>
-                        <div class="job-portfolio__project-info">
-                           full time - remote - business develepoment
-                        </div>
-                     </a>
-                     <a class="job-portfolio__project" href="#!">
-                        <div class="job-portfolio__project-name name">ORDIX</div>
-                        <h3 class="job-portfolio__project-title title title_h3">
-                           Software Developer -
-                           <span>Robot Systems</span>
-                        </h3>
-                        <div class="job-portfolio__project-info">
-                           ful time - remote - Software
-                        </div>
-                     </a>
-                     <a class="job-portfolio__project" href="#!">
-                        <div class="job-portfolio__project-name name">rovenso</div>
-                        <h3 class="job-portfolio__project-title title title_h3">
-                           Robotics Software
-                           <span>Engineer</span>
-                        </h3>
-                        <div class="job-portfolio__project-info">
-                           full time - remote - Software
-                        </div>
-                     </a>
-                     <a class="job-portfolio__project" href="#!">
-                        <div class="job-portfolio__project-name name">rockmass</div>
-                        <h3 class="job-portfolio__project-title title title_h3">
-                           Computer Vision Software
-                           <span>Engineer</span>
-                        </h3>
-                        <div class="job-portfolio__project-info">
-                           full time - remote - Software
-                        </div>
-                     </a>
-                  </div>
-                  <div class="job-portfolio__categories">
-                     <h4 class="job-portfolio__categories-title title title_h4">job categories</h4>
-                     <a class="job-portfolio__category" href="#!">Business development</a>
-                     <a class="job-portfolio__category" href="#!">Data Science</a>
-                     <a class="job-portfolio__category" href="#!">Finance</a>
-                     <a class="job-portfolio__category" href="#!">Human Resources</a>
-                     <a class="job-portfolio__category" href="#!">Software</a>
-                     <a class="job-portfolio__category" href="#!">Operations</a>
-                     <a class="job-portfolio__category" href="#!">Marketing</a>
-                  </div>
-               </div>
-               <a class="job-portfolio__link link link_primary-color" href="#!">next jobs</a>
-            </div>
-         </section>
-      </main>
-
-      <footer class="footer section">
-         <div class="container">
-            <div class="footer__top">
-               <div class="footer__content">
-                  <h2 class="footer__title title title_h2">
-                     we help you to turn
-                     <span>ideas into reality.</span>
-                  </h2>
-                  <div class="footer__text">
-                     if your research processes have unique features, and you are looking for an individual funding
-                     solution - we can help.
-                  </div>
-               </div>
-               <form class="footer__form">
-                  <div class="footer__input-inner">
-                     <input autocomplete="off" class="footer__input" type="text" placeholder="Name*" name="name">
-                  </div>
-                  <div class="footer__input-inner">
-                     <input autocomplete="off" class="footer__input" type="email" placeholder="Email*" name="email">
-                  </div>
-                  <div class="footer__input-inner">
-                     <input autocomplete="off" class="footer__input" type="text" placeholder="Message*" name="message">
-                  </div>
-                  <button class="footer__btn link link_primary-color" type="submit">get in touch</button>
-               </form>
-            </div>
-            <div class="footer__middle">
-               <ul class="footer__socials">
-                  <li>
-                     <a class="footer__social" href="#!">linkedin</a>
-                  </li>
-                  <li>
-                     <a class="footer__social" href="#!">reddit</a>
-                  </li>
-                  <li>
-                     <a class="footer__social" href="#!">facebook</a>
-                  </li>
-                  <li>
-                     <a class="footer__social" href="#!">twitter</a>
-                  </li>
-                  <li>
-                     <a class="footer__social" href="#!">privacy & policy</a>
-                  </li>
-                  <li>
-                     <a class="footer__social" href="#!">cookies policy</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="footer__bottom">
-               <div class="footer__copy">all rights reserved by
-                  <a href="#!">DEVELOPER</a>
-               </div>
-            </div>
-         </div>
-      </footer>
+         </footer>
+      </div>
    </div>
 
+   <script src="js/libs/gsap.min.js"></script>
+   <script src="js/libs/ScrollTrigger.min.js"></script>
+   <script src="js/libs/ScrollSmoother.min.js"></script>
    <script src="js/main.min.js"></script>
 </body>
 

@@ -20,227 +20,234 @@
 <body>
 
 	<div class="wrapper">
-		<header class="header">
-			<div class="container">
-				<div class="header__inner">
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a class="menu__link" href="./program.html">program</a>
+		<div class="content">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__link" href="./program.html">program</a>
+								</li>
+								<li class="menu__item">
+									<span class="menu__link menu__link_active">team</span>
+								</li>
+								<li class="menu__item menu__item_logo">
+									<a class="logo" href="./index.html">
+										<img class="logo__img" src="./images/logo.svg" alt="Aries">
+									</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="./job.html">JOBS</a>
+								</li>
+								<li class="menu__item menu__item_aside-btn">
+									<button class="menu__link aside-menu-btn">
+										<span>MENU</span>
+										<img src="./images/icons/menu.svg" alt="aside menu button">
+									</button>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<button class="scroll-btn">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+					<path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z" fill="#ffffff" />
+				</svg>
+			</button>
+
+			<div class="loader">
+				<div class="loader__inner">
+					<span class="loader__spinner"></span>
+					<div class="loader__text">
+						Loading...
+						<div>Please Wait</div>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+
+			<aside class="aside-menu">
+				<div class="aside-menu__top">
+					<a class="logo logo_small" href="#!">
+						<img class="logo__img" src="./images/logo.svg" alt="">
+					</a>
+					<button class="aside-menu__close">
+						<img src="./images/icons/cross.svg" alt="close icon">
+					</button>
+				</div>
+				<ul class="aside-menu__list">
+					<li class="aside-menu__item">
+						<a class="aside-menu__link" href="./index.html">
+							<span class="aside-menu__link-title">Home</span>
+							<span class="aside-menu__link-descr">We Start Here</span>
+						</a>
+					</li>
+					<li class="aside-menu__item">
+						<a class="aside-menu__link" href="./program.html">
+							<span class="aside-menu__link-title">Program</span>
+							<span class="aside-menu__link-descr">Our Featured Programs</span>
+						</a>
+					</li>
+					<li class="aside-menu__item">
+						<a class="aside-menu__link aside-menu__link_active">
+							<span class="aside-menu__link-title">Team</span>
+							<span class="aside-menu__link-descr">About our people</span>
+						</a>
+					</li>
+					<li class="aside-menu__item">
+						<a class="aside-menu__link" href="./job.html">
+							<span class="aside-menu__link-title">Jobs</span>
+							<span class="aside-menu__link-descr">Cooperation and requirements</span>
+						</a>
+					</li>
+				</ul>
+			</aside>
+
+			<main class="main team-page">
+				<section class="team-home section-home">
+					<picture>
+						<source srcset="./images/team-home-bg-mobile.jpg" media="(max-width: 768px)">
+						<img data-speed=".9" class="team-home__img section-home__img" src="./images/team-home-bg.jpg" alt="ai">
+					</picture>
+					<h1 class="team-home__title section-home__title title title_h2">
+						Genius minds behind
+						<span>this program for you.</span>
+					</h1>
+				</section>
+
+				<section class="team-crew section">
+					<div class="container">
+						<div class="team-crew__inner">
+							<div class="team-crew__name name">ARIES TEAM</div>
+							<h2 class="team-crew__title title title_h2">
+								how our specialist help you.
+							</h2>
+						</div>
+						<div class="line"></div>
+						<div class="team-crew__descr">
+							We are a group of engineers, designers and entrepreneurs brought together to support early stage
+							startups
+							working on hard tech. We have pulled together the people, resources and investment capital with the
+							goal
+							of enabling the next generation of hard tech startups.
+						</div>
+						<div class="team-crew__items">
+							<a data-speed=".9" class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-1.jpg" alt="developer">
+								<div class="team-crew__item-name">Mark Rafello</div>
+								<div class="team-crew__item-post">Leader</div>
+							</a>
+							<a class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-2.jpg" alt="developer">
+								<div class="team-crew__item-name">Edris Alba</div>
+								<div class="team-crew__item-post">Co - Leader</div>
+							</a>
+							<a data-speed=".9" class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-3.jpg" alt="developer">
+								<div class="team-crew__item-name">Roberto Simioni</div>
+								<div class="team-crew__item-post">Lead Technician</div>
+							</a>
+							<a class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-4.jpg" alt="developer">
+								<div class="team-crew__item-name">Chris Rogers</div>
+								<div class="team-crew__item-post">Lead Technician</div>
+							</a>
+							<a data-speed=".9" class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-5.jpg" alt="developer">
+								<div class="team-crew__item-name">Jackson Hayes</div>
+								<div class="team-crew__item-post">Lead Technician</div>
+							</a>
+							<a class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-6.jpg" alt="developer">
+								<div class="team-crew__item-name">Daniel Harrison</div>
+								<div class="team-crew__item-post">Frontend Developer</div>
+							</a>
+							<a data-speed=".9" class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-7.jpg" alt="developer">
+								<div class="team-crew__item-name">John Thompson</div>
+								<div class="team-crew__item-post">Frontend Developer</div>
+							</a>
+							<a class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-8.jpg" alt="developer">
+								<div class="team-crew__item-name">Ethan Smith</div>
+								<div class="team-crew__item-post">Backend Developer</div>
+							</a>
+							<a data-speed=".9" class="team-crew__item" href="#!">
+								<img class="team-crew__item-img" src="./images/team-crew-9.jpg" alt="developer">
+								<div class="team-crew__item-name">Caleb Anderson</div>
+								<div class="team-crew__item-post">Backend Developer</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer section">
+				<div class="container">
+					<div class="footer__top">
+						<div class="footer__content">
+							<h2 class="footer__title title title_h2">
+								we help you to turn
+								<span>ideas into reality.</span>
+							</h2>
+							<div class="footer__text">
+								if your research processes have unique features, and you are looking for an individual funding
+								solution - we can help.
+							</div>
+						</div>
+						<form class="footer__form">
+							<div class="footer__input-inner">
+								<input class="footer__input" autocomplete="off" type="text" placeholder="Name*" name="name">
+							</div>
+							<div class="footer__input-inner">
+								<input class="footer__input" autocomplete="off" type="email" placeholder="Email*" name="email">
+							</div>
+							<div class="footer__input-inner">
+								<input class="footer__input" autocomplete="off" type="text" placeholder="Message*"
+									name="message">
+							</div>
+							<button class="footer__btn link link_primary-color" type="submit">get in touch</button>
+						</form>
+					</div>
+					<div class="footer__middle">
+						<ul class="footer__socials">
+							<li>
+								<a class="footer__social" href="#!">linkedin</a>
 							</li>
-							<li class="menu__item">
-								<span class="menu__link menu__link_active">team</span>
+							<li>
+								<a class="footer__social" href="#!">reddit</a>
 							</li>
-							<li class="menu__item menu__item_logo">
-								<a class="logo" href="./index.html">
-									<img class="logo__img" src="./images/logo.svg" alt="Aries">
-								</a>
+							<li>
+								<a class="footer__social" href="#!">facebook</a>
 							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="./job.html">JOBS</a>
+							<li>
+								<a class="footer__social" href="#!">twitter</a>
 							</li>
-							<li class="menu__item menu__item_aside-btn">
-								<button class="menu__link aside-menu-btn">
-									<span>MENU</span>
-									<img src="./images/icons/menu.svg" alt="aside menu button">
-								</button>
+							<li>
+								<a class="footer__social" href="#!">privacy & policy</a>
+							</li>
+							<li>
+								<a class="footer__social" href="#!">cookies policy</a>
 							</li>
 						</ul>
-					</nav>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__copy">all rights reserved by
+							<a href="#!">DEVELOPER</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</header>
-
-		<button class="scroll-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-				<path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z" fill="#ffffff" />
-			</svg>
-		</button>
-
-		<div class="loader">
-			<div class="loader__inner">
-				<span class="loader__spinner"></span>
-				<div class="loader__text">
-					Loading...
-					<div>Please Wait</div>
-				</div>
-			</div>
+			</footer>
 		</div>
-		<div class="overlay"></div>
-
-		<aside class="aside-menu">
-			<div class="aside-menu__top">
-				<a class="logo logo_small" href="#!">
-					<img class="logo__img" src="./images/logo.svg" alt="">
-				</a>
-				<button class="aside-menu__close">
-					<img src="./images/icons/cross.svg" alt="close icon">
-				</button>
-			</div>
-			<ul class="aside-menu__list">
-				<li class="aside-menu__item">
-					<a class="aside-menu__link" href="./index.html">
-						<span class="aside-menu__link-title">Home</span>
-						<span class="aside-menu__link-descr">We Start Here</span>
-					</a>
-				</li>
-				<li class="aside-menu__item">
-					<a class="aside-menu__link" href="./program.html">
-						<span class="aside-menu__link-title">Program</span>
-						<span class="aside-menu__link-descr">Our Featured Programs</span>
-					</a>
-				</li>
-				<li class="aside-menu__item">
-					<a class="aside-menu__link aside-menu__link_active">
-						<span class="aside-menu__link-title">Team</span>
-						<span class="aside-menu__link-descr">About our people</span>
-					</a>
-				</li>
-				<li class="aside-menu__item">
-					<a class="aside-menu__link" href="./job.html">
-						<span class="aside-menu__link-title">Jobs</span>
-						<span class="aside-menu__link-descr">Cooperation and requirements</span>
-					</a>
-				</li>
-			</ul>
-		</aside>
-
-		<main class="main team-page">
-			<section class="team-home section-home">
-				<picture>
-					<source srcset="./images/team-home-bg-mobile.jpg" media="(max-width: 768px)">
-					<img class="team-home__img section-home__img" src="./images/team-home-bg.jpg" alt="ai">
-				</picture>
-				<h1 class="team-home__title section-home__title title title_h2">
-					Genius minds behind
-					<span>this program for you.</span>
-				</h1>
-			</section>
-
-			<section class="team-crew section">
-				<div class="container">
-					<div class="team-crew__inner">
-						<div class="team-crew__name name">ARIES TEAM</div>
-						<h2 class="team-crew__title title title_h2">
-							how our specialist help you.
-						</h2>
-					</div>
-					<div class="line"></div>
-					<div class="team-crew__descr">
-						We are a group of engineers, designers and entrepreneurs brought together to support early stage
-						startups
-						working on hard tech. We have pulled together the people, resources and investment capital with the
-						goal
-						of enabling the next generation of hard tech startups.
-					</div>
-					<div class="team-crew__items">
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-1.jpg" alt="developer">
-							<div class="team-crew__item-name">Mark Rafello</div>
-							<div class="team-crew__item-post">Leader</div>
-						</a>
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-2.jpg" alt="developer">
-							<div class="team-crew__item-name">Edris Alba</div>
-							<div class="team-crew__item-post">Co - Leader</div>
-						</a>
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-3.jpg" alt="developer">
-							<div class="team-crew__item-name">Roberto Simioni</div>
-							<div class="team-crew__item-post">Lead Technician</div>
-						</a>
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-4.jpg" alt="developer">
-							<div class="team-crew__item-name">Chris Rogers</div>
-							<div class="team-crew__item-post">Lead Technician</div>
-						</a>
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-5.jpg" alt="developer">
-							<div class="team-crew__item-name">Jackson Hayes</div>
-							<div class="team-crew__item-post">Lead Technician</div>
-						</a>
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-6.jpg" alt="developer">
-							<div class="team-crew__item-name">Daniel Harrison</div>
-							<div class="team-crew__item-post">Frontend Developer</div>
-						</a>
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-7.jpg" alt="developer">
-							<div class="team-crew__item-name">John Thompson</div>
-							<div class="team-crew__item-post">Frontend Developer</div>
-						</a>
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-8.jpg" alt="developer">
-							<div class="team-crew__item-name">Ethan Smith</div>
-							<div class="team-crew__item-post">Backend Developer</div>
-						</a>
-						<a class="team-crew__item" href="#!">
-							<img class="team-crew__item-img" src="./images/team-crew-9.jpg" alt="developer">
-							<div class="team-crew__item-name">Caleb Anderson</div>
-							<div class="team-crew__item-post">Backend Developer</div>
-						</a>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer class="footer section">
-			<div class="container">
-				<div class="footer__top">
-					<div class="footer__content">
-						<h2 class="footer__title title title_h2">
-							we help you to turn
-							<span>ideas into reality.</span>
-						</h2>
-						<div class="footer__text">
-							if your research processes have unique features, and you are looking for an individual funding
-							solution - we can help.
-						</div>
-					</div>
-					<form class="footer__form">
-						<div class="footer__input-inner">
-							<input class="footer__input" autocomplete="off" type="text" placeholder="Name*" name="name">
-						</div>
-						<div class="footer__input-inner">
-							<input class="footer__input" autocomplete="off" type="email" placeholder="Email*" name="email">
-						</div>
-						<div class="footer__input-inner">
-							<input class="footer__input" autocomplete="off" type="text" placeholder="Message*" name="message">
-						</div>
-						<button class="footer__btn link link_primary-color" type="submit">get in touch</button>
-					</form>
-				</div>
-				<div class="footer__middle">
-					<ul class="footer__socials">
-						<li>
-							<a class="footer__social" href="#!">linkedin</a>
-						</li>
-						<li>
-							<a class="footer__social" href="#!">reddit</a>
-						</li>
-						<li>
-							<a class="footer__social" href="#!">facebook</a>
-						</li>
-						<li>
-							<a class="footer__social" href="#!">twitter</a>
-						</li>
-						<li>
-							<a class="footer__social" href="#!">privacy & policy</a>
-						</li>
-						<li>
-							<a class="footer__social" href="#!">cookies policy</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__bottom">
-					<div class="footer__copy">all rights reserved by
-						<a href="#!">DEVELOPER</a>
-					</div>
-				</div>
-			</div>
-		</footer>
 	</div>
 
+	<script src="js/libs/gsap.min.js"></script>
+	<script src="js/libs/ScrollTrigger.min.js"></script>
+	<script src="js/libs/ScrollSmoother.min.js"></script>
+	<script src="js/main.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 
